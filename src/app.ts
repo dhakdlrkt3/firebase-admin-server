@@ -8,6 +8,8 @@ initFirebase()
 initExpress(app)
 initRouter()
 
-app.listen(10000, () => {
+const port = process.env.PORT
+
+app.listen(port, () => {
   console.log('>> server start 🚀🚀')
 })
